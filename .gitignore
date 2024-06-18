@@ -1,0 +1,12 @@
+**venv
+**__pycache__
+**.pyc
+**.Rhistory
+**.xcf
+**.ipynb_checkpoints
+**.lock
+**.idea
+**cmake-build-debug
+
+venv
+!data
