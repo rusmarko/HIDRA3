@@ -10,9 +10,9 @@ Data from [this link]() has the following structures:
     'ssh': tensor of shape (N, M), where N is number of locations. Standardized.
     'tide': tensor of shape (N, M), standardized.
     'times': list of time points in UTC, size M
-    'valid geophy': set of indices of valid geophysical data (no NANs, that times are consequent)
+    'valid geophy': set of indices of valid geophysical data (with no NANs and consequent times)
     'valid tgs': {
-        location: set of indices of valid tide gauge data (no NANs in past measurements, tide defined)
+        location: set of indices of valid tide gauge data (with no NANs in past measurements, tide defined)
     },
     'tide gauge order': list of locations, as they appear in 'ssh' and 'tide'
 }
@@ -22,7 +22,7 @@ Data from [this link]() has the following structures:
 ```
 {
     prediction time in UTC: {
-        'geophy': tensor of shape (50, 144, 8, 9, 12), where 50 is number of ensemble members, 144 is number of time points, third dimension contains geophysical data, last two are spatial dimensions. Standardized.
+        'geophy': tensor of shape (50, 144, 8, 9, 12), where 50 is number of ensemble members, 144 is number of time points (72 before and 72 after the prediction point), third dimension contains geophysical data, last two are spatial dimensions. Standardized.
         'sea level': {
             location: {
                 'ssh': tensor of shape 72, standardized,

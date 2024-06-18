@@ -11,7 +11,9 @@ train and evaluate the model. We publish HIDRA3 weights pretrained on 11 locatio
 was used for the evaluation. We provide the predictions for the test period for all 11 locations for 50 atmospheric ensembles. 
 Geophysical training and test datasets are published at destinations listed below, we also publish SSH measurements from Koper.
 
-![Qualitative example of sea level predictions (compared with NEMO, from 2020/10/14).](./images/qualitative_example.png)
+<p align="center">
+    <img src="images/qualitative_example.png" alt="example" width="500px">
+</p>
 
 ### Setup
 
@@ -38,8 +40,6 @@ and run
 cd src
 python3 test.py
 ```
-
-Make sure that locations in `test.py` are set correctly using variable `tide_gauge_locaitons`. 
 
 ### Training
 

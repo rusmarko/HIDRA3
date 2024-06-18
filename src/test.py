@@ -28,7 +28,8 @@ hidra = HIDRA(tide_gauge_locaitons)
 try:
     hidra.load_state_dict(torch.load('../data/HIDRA3_parameters.pth', map_location='cpu'))
 except RuntimeError as e:
-    print('Loading of parameters failed, check that variable `tide_gauge_locations` has correct stations listed. Error:', e)
+    print(e)
+    print('Loading of parameters failed, check that variable `tide_gauge_locations` has correct stations listed.')
     exit()
 hidra.eval()
 
