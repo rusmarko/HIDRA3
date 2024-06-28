@@ -25,7 +25,7 @@ pip3 install -r requirements.txt
 
 ### Evaluation
 
-To evaluate the predictions of HIDRA3 from Jun 2019 – Dec 2020, download the predictions and tide gauges data from [this link](),
+To evaluate the predictions of HIDRA3 from Jun 2019 – Dec 2020, download the predictions and tide gauges data from [this link](https://doi.org/10.5281/zenodo.12571170),
 store them in the `data` folder and run
 
 ```
@@ -33,7 +33,7 @@ cd src
 python3 eval.py
 ```
 
-To recalculate the predictions, download the test data and pretrained HIDRA3 parameters from [this link](), store them in the `data` folder
+To recalculate the predictions, download the test data and pretrained HIDRA3 parameters from [this link](https://doi.org/10.5281/zenodo.12571170), store them in the `data` folder
 and run
 
 ```
@@ -43,8 +43,8 @@ python3 test.py
 
 ### Training
 
-Pretrained weights are available at [this link](). To retrain the model, download
-the training data from [this link]() and run
+Pretrained weights are available at [this link](https://doi.org/10.5281/zenodo.12571170). To retrain the model, download
+the training data from [this link](https://doi.org/10.5281/zenodo.12571170) and run
 
 ```
 cd src

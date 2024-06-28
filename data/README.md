@@ -1,7 +1,7 @@
 
 ### Structure of the Data
 
-Data from [this link]() has the following structures:
+Data from [this link](https://doi.org/10.5281/zenodo.12571170) has the following structures:
 
 - `train.pth`:
 ```
